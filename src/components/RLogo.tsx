@@ -1,0 +1,11 @@
+type RLogoProps = { className?: string }
+
+/** Geometric, single-letter mark shared by the navigation and footer. */
+export default function RLogo({ className }: RLogoProps) {
+  return <svg className={className} viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+    <path className="r-logo-orbit" d="M8.5 39.5C8.5 21.4 22.2 7.3 39.4 8.5 53 9.4 61 19.2 59.3 32.6c-1 8-5 14.1-12.3 18.4" />
+    <path className="r-logo-letter" fillRule="evenodd" d="M15.5 11h20.1c11.3 0 17.9 6 17.9 16.2 0 7.1-3.6 12-10.1 14.3L54.7 55H39.5l-9.7-12H27.5v12h-12V11Zm12 10.5v11.2h7.1c4.2 0 6.5-1.7 6.5-5.6 0-3.8-2.3-5.6-6.5-5.6h-7.1Z" />
+    <path className="r-logo-glint" d="M29.2 23.7h5.2" />
+    <path className="r-logo-star" d="m56 5 2.1 5.6 5.4 2.2-5.4 2.1L56 20.5l-2.1-5.6-5.4-2.1 5.4-2.2L56 5Z" />
+  </svg>
+}
